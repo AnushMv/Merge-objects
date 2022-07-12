@@ -1,0 +1,10 @@
+function merge(...args){
+    let mergedObj = {};
+    for(let i = 0; i < args.length; i++){
+        for(let key in args[i]){
+            mergedObj[key] = args[i][key]
+    
+        }
+    }
+    return mergedObj;
+}

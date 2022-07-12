@@ -1,0 +1,48 @@
+function merge(obj1, obj2){
+    let mergedObject = {};
+    mergedObject = obj1;
+    if(mergedObject.name === undefined || mergedObject.name === obj1.name && obj2.name){
+        mergedObject.name = obj2.name;
+    } else if (mergedObject.age === undefined ||  mergedObject.age === obj1.age && obj2.age){
+         mergedObject.age = obj2.age;
+    }else if (mergedObject.salary === undefined ||  mergedObject.salary === obj1.salary && obj2.salary){
+         mergedObject.salary = obj2.salary;
+    }else if (mergedObject.position === undefined || mergedObject.position === obj1.position && obj2.position){
+         mergedObject.position = obj2.position;
+    }
+    
+    return mergedObject;
+}
+
+
+CALL
+let obj1 = {
+    name: 'A',
+    age: '35',
+    salary: '500',
+   
+}
+let obj2 = {
+    age: '25',
+    position: 'd',
+   
+}
+
+
+
+
+function merge(obj1, obj2){
+    let mergedObject = {};
+
+mergeObject.name = obj2.name || obj1.name;      կարելի է փոխել սրանով
+
+ else if (mergedObject.age === undefined ||  mergedObject.age === obj1.age && obj2.age){
+         mergedObject.age = obj2.age;
+    }else if (mergedObject.salary === undefined ||  mergedObject.salary === obj1.salary && obj2.salary){
+         mergedObject.salary = obj2.salary;
+    }else if (mergedObject.position === undefined || mergedObject.position === obj1.position && obj2.position){
+         mergedObject.position = obj2.position;
+    }
+    
+    return mergedObject;
+}
